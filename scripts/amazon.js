@@ -61,7 +61,7 @@ document.querySelector('.js-products-grid').innerHTML = productsHTML;
 document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     button.addEventListener('click', () => {
         const productId = button.dataset.productId;
-        console.log(button.dataset.productName);
+        //console.log(button.dataset.productName);
 
         let matchingItem;
 
@@ -94,7 +94,7 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
 
         document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
 
-        console.log(cart);
+      //  console.log(cart);
 
     });
 });
