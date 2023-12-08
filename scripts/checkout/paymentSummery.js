@@ -14,9 +14,11 @@
             const delivOption = getDeliveryOption(cartItem.deliveryOptionId);
             Shippingprice += delivOption.price;
 
-
-
+            
+            console.log(cartItem.quantity);
         });
+
+        
 
         const totalBeforeTax = productprice + Shippingprice;
         const tax = totalBeforeTax* 0.1;
@@ -27,7 +29,7 @@
     </div>
 
     <div class="payment-summary-row">
-    <div>Items (3):</div>
+    <div>Items (${3}):</div>
     <div class="payment-summary-money">&#8377;${productprice / 100}</div>
     </div>
 
